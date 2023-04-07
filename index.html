@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bondi.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+  <title>bootstrap hassona</title>
+</head>
+<body>
+<div class="container-fluid">  
+  <!-- navbar  -->
+  <nav class="navbar navbar-expand-lg  sticky-top bg-dark ">
+    <div class="container-fluid ">
+      <a class="navbar-brand pe-2" href="#">
+        <img  src="./image/logo.png" alt="">
+        Hassona
+      </a>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-light">
+          <li class="nav-item">
+            <a class="nav-link  text-info" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Courses
+            </a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item" href="#">Java</a></li>
+              <li><a class="dropdown-item" href="#">C-Sharp</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">HTML</a></li>
+              <li><a class="dropdown-item" href="#">CSS</a></li>
+              <li><a class="dropdown-item" href="#">Saas</a></li>
+              <li><a class="dropdown-item" href="#">JavaScript</a></li>
+              <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+              <li><a class="dropdown-item" href="#">React</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+        <form class="d-flex mb-3 mb-lg-0" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info" type="submit">Search</button>
+        </form>        
+        <form class="d-flex" role="search">
+          <button class="btn btn-outline-info ms-lg-2" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img  src="./image/pexels-olia-danilevich-4974920.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h1>HTML</h1>
+          <a class="btn btn-info" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfnXKjZ9UcT5BVt9x19BlItX" target="_blank">View This Course</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./image/pexels-mikhail-nilov-7988113.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h1>CSS</h1>
+          <a class="btn btn-info" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIflO6xnz4jpmzzSuo5B63aJf" target="_blank">View This Course</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./image/pexels-olia-danilevich-4974915.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h1>JavaScript</h1>
+          <a class="btn btn-info" href="https://www.youtube.com/playlist?list=PLHIfW1KZRIfmiYYwt29BG7N9zzsd-jLRQ" target="_blank">View This Course</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+ <!-- card -->
+ <div class="card bg-dark rounded-0 py-3">
+    <div class="card-body">
+      <h1 class="card-title text-light">Welcome</h1>
+      <p class="card-text text-white-50 fs-5">programming without language and without code.</p>
+      <hr class="text-light">
+      <a href="https://www.youtube.com/playlist?list=PLHIfW1KZRIflppXbTqLj4qwu1BH6F31zo" class="btn btn-info lighter " target="_blank">Learn More</a>
+    </div>
+ </div>
+<!-- collapse program lang  -->
+ <h1 class="adress text-center p-5">***Program Language***  <span class="badge bg-secondary rounded-pill">New</span></h1>
+    <div class="collapse-prog-lang py-3  bg-dark">  
+        <p class="pt-3">
+        <a class="btn btn-outline-info " data-bs-toggle="collapse" href="#collapseExample-one" role="button" aria-expanded="false" aria-controls="collapseExample-one">
+          Python Programming Language
+        </a>
+      </p>
+      <div class="collapse " id="collapseExample-one">
+        <div class="card card-body bg-secondary text-light text-white-50 fs-3">
+          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+      </div>
+      <!--  -->
+        <p class="pt-3">
+        <a class="btn btn-outline-info" data-bs-toggle="collapse" href="#collapseExample-two" role="button" aria-expanded="false" aria-controls="collapseExample-two">
+          Ring Programming Language 
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample-two">
+        <div class="card card-body bg-secondary text-light text-white-50 fs-3">
+          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+      </div>
+      <!--  -->
+        <p class="pt-3 ">
+        <a class="btn btn-outline-info" data-bs-toggle="collapse" href="#collapseExample-three" role="button" aria-expanded="false" aria-controls="collapseExample-three">
+          Java Programming Language
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample-three">
+        <div class="card card-body bg-secondary text-light text-white-50 fs-3">
+          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+      </div>
+    </div>
+<!-- try python  -->
+  <h2 class="adress text-center text-black-50">Python is very easy</h2>
+    <div class="card bg-dark">
+      <div class="card-body">
+        <h4 class="card-title text-light">-Try The Code  From 
+          <a class="btn btn-outline-info" href="https://ring-lang.sourceforge.net/cgi-bin/ringlang.cgi" target="_blank">Here</a>
+        </h4>
+        <div class="btn btn-sm btn-info mt-4 mr-auto" onclick="mycopy('mypython')">copy</div>
+        <Pre>
+          <code id="mypython" class="text-info fs-4">
+            see 'I love Ring' + nl
+            for x in 'A':'Z' see x + ', ' next
+          </code>
+        </Pre>
+      </div>
+    </div>
+<!-- try ring  -->
+    <h2 class="adress text-center text-black-50">Ring is very easy</h2> 
+    <div class="card bg-dark">
+      <div class="card-body">
+        <h4 class="card-title text-light">-Try The Code  From 
+          <a class="btn btn-outline-info" href="https://www.python.org/shell/" target="_blank">Here</a>
+        </h4>
+        <div class="btn btn-sm btn-info mt-4 mr-auto" onclick="mycopy('myring')">copy</div>
+        <Pre>
+          <code id="myring" class="text-info fs-4">
+            name = input('Enter your name: ');print('Hello' + name)
+          </code>
+        </Pre>
+      </div>
+    </div>
+<!-- basic rock  -->
+    <h1 class="text-center pt-5">Basic Rock</h1>
+     <div class="container">
+       <div class="row justify-content-center row-gap-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card text-light bg-dark">
+              <a href="https://youtu.be/KRiq7Eqfe-Q" target="_blank">
+                <img class="card-img-top" src="./image/download (2).jpg" alt="">
+              </a>
+              <div class="card-body">
+                <h5>Basic Rock HTML</h5>
+                <p class="card-title text-white-50 mt-3">Basic Rock in HTMLe from zero to hero.</p>
+                <a class="btn btn-info rounded-3 " href="https://hassouna-academy.com/books" target="_blank">Download The Book</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card text-light bg-dark">
+              <a href="https://youtu.be/KRiq7Eqfe-Q" target="_blank">
+                <img class="card-img-top" src="./image/download (2).jpg" alt="">
+              </a>
+              <div class="card-body">
+                <h5>Basic Rock HTML</h5>
+                <p class="card-title text-white-50 mt-3">Basic Rock in HTMLe from zero to hero.</p>
+                <a class="btn btn-info rounded-3 " href="https://hassouna-academy.com/books" target="_blank">Download The Book</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card text-light bg-dark">
+              <a href="https://youtu.be/KRiq7Eqfe-Q" target="_blank">
+                <img class="card-img-top" src="./image/download (2).jpg" alt="">
+              </a>
+              <div class="card-body">
+                <h5>Basic Rock HTML</h5>
+                <p class="card-title text-white-50 mt-3">Basic Rock in HTMLe from zero to hero.</p>
+                <a class="btn btn-info rounded-3 " href="https://hassouna-academy.com/books" target="_blank">Download The Book</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card text-light bg-dark">
+              <a href="https://youtu.be/KRiq7Eqfe-Q" target="_blank">
+                <img class="card-img-top" src="./image/download (2).jpg" alt="">
+              </a>
+              <div class="card-body">
+                <h5>Basic Rock HTML</h5>
+                <p class="card-title text-white-50 mt-3">Basic Rock in HTMLe from zero to hero.</p>
+                <a class="btn btn-info rounded-3 " href="https://hassouna-academy.com/books" target="_blank">Download The Book</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card text-light bg-dark">
+              <a href="https://youtu.be/KRiq7Eqfe-Q" target="_blank">
+                <img class="card-img-top" src="./image/download (2).jpg" alt="">
+              </a>
+              <div class="card-body">
+                <h5>Basic Rock HTML</h5>
+                <p class="card-title text-white-50 mt-3">Basic Rock in HTMLe from zero to hero.</p>
+                <a class="btn btn-info rounded-3 " href="https://hassouna-academy.com/books" target="_blank">Download The Book</a>
+              </div>
+            </div>
+          </div>
+       </div>
+    </div>
+<!-- thanks -->
+    <h1 class="text-center pt-5">Thanks For</h1>
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card ">
+              <img class="card-img-top  thanks-img" src="./image/download (4).jpg" alt="">
+              <div class="card-body text-white-50 bg-dark text-center">
+                <p class="card-text">M: ISLAM</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top thanks-img" src="./image/ghareeb-2.jpg" alt="">
+              <div class="card-body text-white-50 bg-dark text-center">
+                <p class="card-text">M: GHAREEP</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top thanks-img" src="./image/download (5).jpg" alt="">
+              <div class="card-body text-white-50 bg-dark text-center">
+                <p class="card-text">M: OSAMA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- join us     -->
+    <h1 class="text-center pt-5">Join Us</h1>    
+      <div class="row justify-content-center row-gap-4 align-items-center">
+        <div class="col-md-3 col-sm-6 ">
+          <div class="card bg-dark text-light">
+            <div class="card-body ">
+              <h5 class="card-title">Subscripe Now
+                <a class="" href="#">
+                  <i class="fa-brands fa-youtube fa-2x text-danger"></i>
+                </a>
+              </h5>
+              <a class="card-link text-info" href="https://www.youtube.com/user/HassounaAcademy/" target="_blank">Go To Link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card bg-dark text-light">
+            <div class="card-body">
+              <h5 class="card-title">Follo Mr. Hassona
+                <a class="" href="#">
+                  <i class="fa-brands fa-facebook fa-2x   "></i>
+                </a>
+              </h5>
+              <a class="card-link text-info" href="https://www.facebook.com/ahmedhassounafirst" target="_blank">Go To Link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card bg-dark text-light">
+            <div class="card-body">
+              <h5 class="card-title">Like The Page Now
+                <a class="" href="#">
+                  <i class="fa-brands fa-facebook fa-2x   "></i>
+                </a>
+              </h5>
+              <a class="card-link text-info" href="https://www.facebook.com/Hassouna.Academy/" target="_blank">Go To Link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card bg-dark text-light">
+            <div class="card-body">
+              <h5 class="card-title ">Join To Academy Group
+                <a class="" href="#">
+                  <i class="fa-brands fa-facebook fa-2x   "></i>
+                </a>
+              </h5>
+              <a class="card-link text-info" href="https://www.facebook.com/groups/hassouna.academy/" target="_blank">Go To Link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- footer  -->
+<div class="footer bg-dark text-light text-center mt-5">
+<div class="row ">
+  <div class="col-md-4 ">
+    <hr>
+    <h5>Hassouna Academy</h5>
+    <hr>
+    <ul class="text-white-50 list-unstyled">
+      <li>Tel: 313-676-785</li>
+      <li class="m-2">Address: Cairo, Egypt</li>
+      <li>Fax: 333-768-675</li>
+    </ul>
+  </div>
+  <div class="col-md-4 ">
+    <hr>
+    <h5>Important Links</h5>
+    <hr>
+    <ul class="list-unstyled">
+      <li><a class="text-info " href="">Programming Program</a></li>      
+      <li class="m-2"><a class="text-info " href="">Answee Me Program</a></li>      
+      <li><a class="text-info" href="">Programming in One Video</a></li>      
+    </ul>
+  </div>
+  <div class="col-md-4">
+    <hr>
+    <h5>Vision</h5>
+    <hr>
+    <ul class="text-white-50 list-unstyled">
+      <li>Education is First</li>          
+      <li class="m-2">Education for All</li>          
+      <li>Education is Easy</li>          
+    </ul>
+  </div>
+</div>
+<h6 class="m-0 p-5 pb-3 text-white-50">Copyright 2023 <a class="text-info fw-bold" href="">Hassouna Academy</a> All Rights Reserved</h6>
+</div>
+  </div>
+
+
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js.map"></script>
+  
+<script>
+  function mycopy(name){
+    var range=document.createRange();
+    range.selectNode(document.getElementById(name));
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+    document.execCommand("copy");
+    window.getSelection().removeAllRanges();
+
+  }
+</script>
+
+
+
+
+</body>
+
+</html>
+<!-- <i class="fa-solid fa-bars"></i> -->
